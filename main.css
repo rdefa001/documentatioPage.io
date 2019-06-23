@@ -1,0 +1,143 @@
+ /* color: #C3FF00; Verde cana */
+
+ /*color: #303030;*/
+
+ /* color: #535353;*/
+
+ /*color: #EFEFEF; */
+
+ * {
+     box-sizing: border-box;
+ }
+
+ html {
+     color: #535353;
+ }
+
+ #wrapper {
+     display: flex;
+     font-family: Arial, Heveltica, sans-serif;
+     background-color: #fff;
+     font-size: 20px;
+     line-height: 2em;
+     Padding: 20px;
+     border-radius: 4px;
+ }
+
+ #navbar {
+     position: fixed;
+     min-width: 290px;
+     top: 0px;
+     left: 0px;
+     width: 300px;
+     height: 100%;
+     background-color: #535353;
+     margin-right: 20px;
+ }
+
+ #navbar h1 {
+     margin: 7px auto;
+     text-align: center;
+     color: #fff;
+ }
+
+
+ #navbar a {
+     border-top: 1px solid #C3FF00;
+     border-bottom: 1px solid #C3FF00;
+     color: #C3FF00;
+     text-decoration: none;
+     text-align: center;
+     padding: 20px;
+     display: block;
+ }
+
+ #navbar a:hover {
+     background-color: #C3FF00;
+     color: #535353;
+ }
+
+ #navbar li {
+     margin-bottom: 30px;
+     padding: 3px;
+ }
+
+
+ #main-doc {
+     margin-left: 300px;
+ }
+
+ code,
+ .divCode,
+ .divCode1 {
+     background-color: #EFEFEF;
+     padding: 8px;
+     margin-top: 30px;
+     border-left: 5px solid #C3FF00;
+ }
+
+ span {
+     background-color: #C3FF00;
+ }
+
+ .divCode,
+ .divCode1 {
+     display: inline-block;
+ }
+
+ .grid {
+     display: grid;
+     width: 100%;
+     grid-template-columns: repeat(5, 1fr);
+     grid-gap: 10px;
+     background: #535353;
+     padding: 20px;
+ }
+
+ .link {
+     font-size: 18px
+ }
+
+ a {
+     text-decoration: none;
+     color: blue;
+ }
+
+ .copyrights {
+     text-align: center;
+ }
+
+ @media screen and (max-width: 600px) {
+     #wrapper {
+         display: block;
+         max-width: 100%;
+         margin: 0;
+     }
+
+     #navbar {
+         width: 100%;
+         position: static;
+     }
+
+     #main-doc {
+         margin: 0;
+     }
+
+     .image {
+         max-width: 100%;
+     }
+
+     .grid {
+         display: block;
+         max-width: 100%;
+     }
+
+     .divCode1 {
+         margin: 20px;
+         width: 300px;
+         height: 300px;
+     }
+
+     .divCode {
+         width: 100%;
+     }
